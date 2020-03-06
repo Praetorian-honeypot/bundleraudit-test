@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_action :set_layout
+  protect_from_forgery with: :exception
 
   private
 
